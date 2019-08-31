@@ -4,14 +4,14 @@ namespace mervick\image;
 
 use Yii;
 use yii\base\InvalidParamException;
-use yii\base\Object;
+use yii\base\BaseObject;
 
 /**
  * Class Image
  * @package mervick\image
  * @author Andrey Izman
  */
-abstract class Image extends Object
+abstract class Image extends BaseObject
 {
     // Resizing constants
     const WIDTH   = 'width';
