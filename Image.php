@@ -1,6 +1,6 @@
 <?php
 
-namespace mervick\image;
+namespace kashifanwar47\image;
 
 use Yii;
 use yii\base\InvalidParamException;
@@ -8,8 +8,8 @@ use yii\base\BaseObject;
 
 /**
  * Class Image
- * @package mervick\image
- * @author Andrey Izman
+ * @package kashifanwar47\image
+ * @author Kashif Anwar
  */
 abstract class Image extends BaseObject
 {
@@ -66,7 +66,7 @@ abstract class Image extends BaseObject
      */
     public static function load($file, $driver = null, $throwErrors = true)
     {
-        $driver = $driver ?: '\\mervick\\image\\drivers\\GD';
+        $driver = $driver ?: '\\kashifanwar47\\image\\drivers\\GD';
         return new $driver($file, $throwErrors);
     }
 

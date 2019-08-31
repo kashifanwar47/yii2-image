@@ -1,27 +1,23 @@
 {
-    "name": "mervick/yii2-image",
+    "name": "kashifanwar47/yii2-image",
     "description": "Yii2 extension for image manipulating.",
     "keywords": ["yii", "yii2", "extension", "image"],
-    "homepage": "https://github.com/mervick/yii2-image",
+    "homepage": "https://github.com/kashifanwar47/yii2-image",
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Andrey Izman",
-            "email": "izmanw@gmail.com"
-        },
-        {
-            "name": "Yuri Kileev",
-            "email": "kileev@gmail.com"
-        }
+            "name": "Kashif Anwar",
+            "email": "kashif_pucit06@yahoo.com"
+        }      
     ],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=7.2.0",
         "yiisoft/yii2": "*"
     },
     "autoload": {
         "psr-4": {
-            "mervick\\image\\": ""
+            "kashifanwar47\\image\\": ""
         }
     }
 }

@@ -1,14 +1,14 @@
 <?php
 
-namespace mervick\image\drivers;
+namespace kashifanwar47\image\drivers;
 
-use mervick\image\Image;
+use kashifanwar47\image\Image;
 use yii\base\InvalidParamException;
 
 /**
  * Imagick driver.
- * @package mervick\image\drivers
- * @author Andrey Izman
+ * @package kashifanwar47\image\drivers
+ * @author Kashif Anwar
  */
 class Imagick extends Image
 {

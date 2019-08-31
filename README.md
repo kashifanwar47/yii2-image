@@ -1,7 +1,7 @@
 # yii2-image 
 [![Analytics](https://ga-beacon.appspot.com/UA-65295275-1/yii2-image)](https://github.com/igrigorik/ga-beacon)
 
-Yii2 Framefork Extension for Image Manipulation.  
+Yii2 Framework Extension for Image Manipulation.  
 Forked from [yurkinx/yii2-image](https://github.com/yurkinx/yii2-image)
 
 ## Installation
@@ -11,18 +11,18 @@ Add to your composer.json:
 ```php
 "require": 
 {
-    "mervick/yii2-image": "~1.0"
+    "kashifanwar47/yii2-image": "~2.0"
 }
 ```
-after that exec `php composer.phar update`  
+after that exec `php composer.phar update or composer update`  
 
 ## Usage 
 
 ### Simple
 ```php
-$driver = \mervick\image\drivers\GD::classname(); // or `\mervick\image\drivers\Imagick::classname()`
-/* @var $image \mervick\image\Image */
-$image = \mervick\image\Image::load('@path/to/file', $driver);
+$driver = \kashifanwar47\image\drivers\GD::classname(); // or `\kashifanwar47\image\drivers\Imagick::classname()`
+/* @var $image \kashifanwar47\image\Image */
+$image = \kashifanwar47\image\Image::load('@path/to/file', $driver);
 $image->resize($width, $height, 'crop');
 $image->save(); 
 // or $image->save('@path/to/file2.png', $quality);
@@ -34,14 +34,14 @@ configure in `main.php`:
 ```php
 'components' => [
     'image' => [
-        'class' => 'mervick\\image\\Component',
-        'driver' => 'mervick\\image\\drivers\\Imagick',
+        'class' => 'kashifanwar47\\image\\Component',
+        'driver' => 'kashifanwar47\\image\\drivers\\Imagick',
     ],
 ],
 ```
 usage
 ```php
-/* @var $image \mervick\image\Image */
+/* @var $image \kashifanwar47\image\Image */
 $image = Yii::$app->image->load('@path/to/file');
 $image->flip('vertical')->save('@path/to/file2.jpeg', $quality);
 

@@ -1,18 +1,18 @@
 <?php
 
-namespace mervick\image;
+namespace kashifanwar47\image;
 
 /**
  * Class Component
- * @package mervick\image
- * @author Andrey Izman
+ * @package kashifanwar47\image
+ * @author Kashif Anwar
  */
 class Component extends \yii\base\Component
 {
     /**
      * @var string Driver
      */
-    public $driver = '\\mervick\\image\\drivers\\GD';
+    public $driver = '\\kashifanwar47\\image\\drivers\\GD';
 
     /**
      * @var boolean
